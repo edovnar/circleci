@@ -41,7 +41,6 @@ jobs:
 
       # run tests!
       - run: gradle test
-      
 parameters:
   reporting-rerun-condition:
     default: ""
