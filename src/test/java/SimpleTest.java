@@ -25,7 +25,9 @@ public class SimpleTest {
     }
 
     @Test
-    public void helloOrNot() {
+    public void helloOrNot() throws InterruptedException {
+        log.info("Sleeping for 5 seconds...");
+        TimeUnit.SECONDS.sleep(5);
         int a = random.nextInt(3);
         boolean greatRandom = a != 2;
         Assert.assertTrue(greatRandom);
