@@ -40,7 +40,9 @@ jobs:
           key: v1-dependencies-{{ checksum "build.gradle" }}
 
       # run tests!
+      - run: gradle clean
       - run: gradle test
+
 parameters:
   reporting-rerun-condition:
     default: ""

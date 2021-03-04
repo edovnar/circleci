@@ -1,7 +1,7 @@
-import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.lang.invoke.MethodHandles;
 import java.util.Random;
@@ -11,7 +11,6 @@ public class SimpleTest {
 
     private static final Logger log = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
     private static final Random random = new Random();
-;
 
     @Test
     public void hello() {
