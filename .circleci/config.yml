@@ -19,6 +19,15 @@ jobs:
             - v1-dependencies-{{ checksum "build.gradle" }}
             - v1-dependencies-
       - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
+      - run: gradle dependencies
       - save_cache:
           paths:
             - ~/.gradle
