@@ -62,6 +62,12 @@ jobs:
       - run: gradle clean
       - run: gradle test
 
+workflows:
+  hithere:
+    jobs:
+      - build
+      - oop
+
 parameters:
   reporting-rerun-condition:
     default: ""
