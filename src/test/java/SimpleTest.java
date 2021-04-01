@@ -34,9 +34,10 @@ public class SimpleTest {
     }
 
     @Test
-    public void notOrHello() {
+    public void notOrHello() throws InterruptedException {
         int a = random.nextInt(3);
         boolean greatRandom = a == 2;
+        TimeUnit.SECONDS.sleep(10);
         Assert.assertTrue(greatRandom);
     }
 
