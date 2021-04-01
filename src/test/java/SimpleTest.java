@@ -20,7 +20,7 @@ public class SimpleTest {
     @Test
     public void helloo() throws InterruptedException {
         log.info("Sleeping for 10 seconds...");
-        TimeUnit.SECONDS.sleep(10);
+        TimeUnit.SECONDS.sleep(20);
         Assert.assertTrue(true);
     }
 
